@@ -13,9 +13,9 @@ default: &default
   adapter: mysql2
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <%= ENV.fetch("DB_USERNAME") { admin } %>
-  password: <%= ENV.fetch("DB_PASSWORD") { "12345678" } %>
-  host: <%= ENV.fetch("DB_HOST") { "localhost" } %>
+  username: admin
+  password: 12345678
+  host: database-1.c1om3er1q8vu.ap-southeast-1.rds.amazonaws.com
 
 development:
   <<: *default
